@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="shortcut icon" href="img/xablau-summit.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Xablau Document</title>
+</head>
+<body>
+    
+    <header id="header"> 
+        <img src="/img/xablau summit.png" alt="Xablau_Logo" class="logo">
+        <h2>Xablau Submit</h2>
+    </header>
+
+    <main id="main">
+
+        <h1 id="title-form">Formulário de Cadastro</h1>
+
+        <form action="#" method="post" id="registration-form">
+
+            <div class="information-row">
+
+                <input class="information-inputs" type="name" name="nome" id="name" placeholder="Nome" required>
+                <input class="information-inputs" type="lastname" name="last name" id="lastname" placeholder="Sobrenome" required>
+
+            </div>
+
+            <div class="information-row">   
+
+                <input class="information-inputs" type="email" name="email" id="email" placeholder="E-mail" required>
+
+                <select class="information-inputs" name="areas" required>
+                    <option value="" disabled selected> Área de interesse...</option>
+                    <option value="Frontend"> Frontend </option>
+                    <option value="Backend"> Backend </option>
+                    <option value="Data Science"> Data Science </option>
+                    <option value="Ux/UI"> UX/UI Design </option>
+                </select>
+
+            </div>
+
+            <label class="title-labels"> Quais temas mais te interessam?</label>
+            
+            <div id="background-topics">
+                <label class="label-topics" for="temas_interesse">A.I<input class="checkbox-topic" type="checkbox" name="AI"
+                        id="AI"></label>
+            
+                <label class="label-topics" for="temas_interesse">Cloud <input class="checkbox-topic" type="checkbox" name="Cloud"
+                        id="Cloud"></label>
+            
+                <label class="label-topics" for="temas_interesse">DevOps <input class="checkbox-topic" type="checkbox" name="DevOps"
+                        id="DevOps"></label>
+            
+                <label class="label-topics" for="temas_interesse">FrontEnd <input class="checkbox-topic" type="checkbox"
+                        name="FrontEnd" id="FrontEnd"></label>
+            
+                <label class="label-topics" for="temas_interesse">BackEnd <input class="checkbox-topic" type="checkbox"
+                        name="BackEnd" id="BackEnd"></label>
+            
+                <label class="label-topics" for="temas_interesse">Soft Skills <input class="checkbox-topic" type="checkbox"
+                        name="Soft Skills" id="Soft Skills"></label>
+            </div>
+
+            <label class="title-labels" for="avaliacao">Como você avalia o Xablau Summit?</label>
+
+            <div id="divrate-radios">
+                <label for="rate-element">1</label>
+                <input type="radio" name="rate" class="rate-element">
+                <label for="rate-element">2</label>
+                <input type="radio" name="rate" class="rate-element">
+                <label for="rate-element">3</label>
+                <input type="radio" name="rate" class="rate-element">
+                <label for="rate-element">4</label>
+                <input type="radio" name="rate" class="rate-element">
+                <label for="rate-element">5</label>
+                <input type="radio" name="rate" class="rate-element">
+                <label for="rate-element">6</label>
+                <input type="radio" name="rate" class="rate-element">
+                <label for="rate-element">7</label>
+                <input type="radio" name="rate" class="rate-element">
+                <label for="rate-element">8</label>
+                <input type="radio" name="rate" class="rate-element">
+                <label for="rate-element">9</label>
+                <input type="radio" name="rate" class="rate-element">
+                <label for="rate-element">10</label>
+                <input type="radio" name="rate" class="rate-element">
+            </div>
+  
+            <label class="title-labels" for="textblock-feedback"> Deixe um feedback construtivo <br>(1 ponto positivo / 1 a melhorar)</label>
+            <textarea name="feedback" id="textblock-feedback"></textarea>
+
+            <button type="submit" id="submit-btn"> Enviar </button>
+        </form>
+    </main>
+
+    <footer id="footer">
+        <p>© 2025 Xablau Summit. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
